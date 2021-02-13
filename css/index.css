@@ -6,7 +6,7 @@
 }
 
 
-
+/* -------------------------------carfree------------------------------------------------- */
 .car div.car1_free{
     position: absolute;
     width: 201px;
@@ -14,6 +14,13 @@
     left: 590px;
     top: 700px;
     background:#13e713;
+}
+
+.car div.car1_free p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    
 }
 
 .car div.car2_free{
@@ -25,6 +32,13 @@
     background:#13e713;
 }
 
+.car div.car2_free p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    
+}
+
 .car div.car3_free{
     position: absolute;
     width: 201px;
@@ -32,6 +46,13 @@
     left: 1050px;
     top: 700px;
     background:#13e713;
+}
+
+.car div.car3_free p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    
 }
 
 .car div.car4_free{
@@ -43,6 +64,15 @@
     background:#13e713;
 }
 
+.car div.car4_free p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    
+}
+
+/* -------------------------------carbusy------------------------------------------------- */
+
 .car div.car1_busy{
     position: absolute;
     width: 201px;
@@ -50,6 +80,19 @@
     left: 590px;
     top: 700px;
     background:#fa0b0b;
+}
+
+.car div.car1_busy p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.car div.car1_busy h2{
+    text-align: center;
+    margin-top: -30px;
+    
 }
 
 .car div.car2_busy{
@@ -61,6 +104,19 @@
     background:#fa0b0b;
 }
 
+.car div.car2_busy p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.car div.car2_busy h2{
+    text-align: center;
+    margin-top: -30px;
+    
+}
+
 .car div.car3_busy{
     position: absolute;
     width: 201px;
@@ -68,6 +124,19 @@
     left: 1050px;
     top: 700px;
     background:#fa0b0b;
+}
+
+.car div.car3_busy p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.car div.car3_busy h2{
+    text-align: center;
+    margin-top: -30px;
+    
 }
 
 .car div.car4_busy{
@@ -78,6 +147,20 @@
     top: 700px;
     background:#fa0b0b;
 }
+
+.car div.car4_busy p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.car div.car4_busy h2{
+    text-align: center;
+    margin-top: -30px;
+    
+}
+/* --------------------------------------------------------------------------------------------------------- */
 
 .car-img{
     width: 1525px;
@@ -97,10 +180,26 @@
     width: 388px;
     height: 58px;
     left: 68px;
-    top: 940px;
+    top: 810px;
+    background-color: #4a72ca;
 }
 
-.avail{
+a :hover{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    
+    position: absolute;
+    width: 388px;
+    height: 58px;
+    left: 68px;
+    top: 810px;
+    background-color: #2dee9e;
+}
+
+/*.avail{
     position: absolute;
     width: 83px;
     height: 23px;
@@ -155,7 +254,7 @@
 
 .time h3{
     margin-left: 20px;
-}
+} */
 
 .empty{
     margin-bottom: 350px;
