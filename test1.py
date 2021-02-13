@@ -10,7 +10,7 @@ myCollection = mongo.db.g16
 
 @app.route('')
 
-@app.route('/store', methods=['GET'])
+@app.route('/status', methods=['GET'])
 def find():
     flit = {"time_out": None}
     query = myCollection.find(flit)
@@ -19,29 +19,23 @@ def find():
         output[ele["slot_number"]] = 1
     return { "result": output }
 
-@app.route('/addcar', methods=['POST'])
+@app.route('/updatecar', methods=['POST'])
 def insert_one():
     data = request.json
-    myInsert = {
-            "type": "car",
-            "slot_number" : data["No"],
-            "time_in": time.time(),
-            "time_out": None
-            }
-    myCollection.insert_one(myInsert)
-    return {'result': 'Created successfully'}
+    if data["status"] == 1:
+        myInsert = {
+                "type": "car",
+                "slot_number" : data["No"],
+                "time_in": time.time(),
+                "time_out": None
+                }
+        return {'result': 'add car in'}
+    else :
+        filt = {{'slot_number' : data["No"]},{"time_out": None}}
+        updated_content = {"$set": {'time_out' : time.time()}}
+        myCollection.update_one(filt, updated_content)
+        return {'result': 'add car out'}
 
-@app.route('/addcar', methods=[''])
-def insert_one():
-    data = request.json
-    myInsert = {
-            "type": "car",
-            "slot_number" : data["No"],
-            "time_in": time.time(),
-            "time_out": None
-            }
-    myCollection.insert_one(myInsert)
-    return {'result': 'Created successfully'}
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port='50005', debug=True)
     
