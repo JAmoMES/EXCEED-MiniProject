@@ -1,0 +1,142 @@
+.head{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #D2B55B;
+}
+
+
+/* -------------------------------car------------------------------------------------- */
+.car div.car1{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 590px;
+    top: 700px;
+    background:#13e713;
+}
+
+.car div.car1 p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    
+}
+
+.car div.car1 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.car div.car2{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 820px;
+    top: 700px;
+    background:#13e713;
+}
+
+.car div.car2 p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    
+}
+
+.car div.car2 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.car div.car3{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 1050px;
+    top: 700px;
+    background:#13e713;
+}
+
+.car div.car3 p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    
+}
+
+.car div.car3 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.car div.car4{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 1280px;
+    top: 700px;
+    background:#13e713;
+}
+
+.car div.car4 p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    
+}
+
+.car div.car4 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.car-img{
+    width: 1525px;
+    height: 680px;
+    margin-left: -10px;
+    margin-top: -10px ;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.btn{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    
+    position: absolute;
+    width: 388px;
+    height: 58px;
+    left: 68px;
+    top: 810px;
+    background-color: #4a72ca;
+}
+
+a :hover{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    
+    position: absolute;
+    width: 388px;
+    height: 58px;
+    left: 68px;
+    top: 810px;
+    background-color: #2dee9e;
+}
+
+.empty{
+    margin-bottom: 350px;
+}
