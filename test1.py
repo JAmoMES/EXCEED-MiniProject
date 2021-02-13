@@ -10,7 +10,7 @@ myCollection = mongo.db.g16
 i = 0
 cost_t = [0]
 
-@app.route('/status', methods=['GET'])
+@app.route('/status', methods=['GET']) #158.108.182.18:3000/status?slot={NumOfSlot}
 def find():
     slot = request.args.get("slot")
     flit = {"slot_number": slot ,"time_out": None}
@@ -20,7 +20,7 @@ def find():
         output[ele["status"]] = 1
     return { "result": output }
 
-@app.route('/cost', methods=['GET'])
+@app.route('/cost', methods=['GET']) #158.108.182.18:3000/cost?ID={IdOfCar}
 def cost():
     flit = request.args
     query = myCollection.find(flit)
@@ -28,7 +28,7 @@ def cost():
     output = [{cost: money}]
     return { "result": output}
 
-@app.route('/time_cost', methods=['GET'])
+@app.route('/time_cost', methods=['GET']) #158.108.182.18:3000/time_cost
 def array_cost():
     flit = {"time_out": None}
     query = myCollection.find(flit)
@@ -36,11 +36,12 @@ def array_cost():
     summ = cost_t[-1]
     t = int(math.ceil(time.time()))
     for ele in query:
-        sum += int(math.ceil((t - ele["time_in"])/60)*20)
-    cost_t.append(sum)
+        if (t-ele["time_in"])%60 == 0:
+            summ += 20
+    cost_t.append(summ)
     return { "result": cost_t}
 
-@app.route('/updatecar', methods=['POST'])
+@app.route('/updatecar', methods=['POST']) #158.108.182.18:3000/updatecar
 def insert_one():
     data = request.json
     if data["Status"] == 1:
@@ -48,7 +49,7 @@ def insert_one():
         i +=1 
         flit = {"slot_number": data["No"] ,"time_out": None}
         query = myCollection.find(flit)
-        if(len(query)!=0):
+        for ele in query:
             return {'result': 'slot full'}
         myInsert = {
                 "type": "car",
@@ -68,5 +69,5 @@ def insert_one():
         return {'result': 'add car out'}
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port='50005', debug=True)
+    app.run(host='0.0.0.0', port='3000', debug=True)
     
