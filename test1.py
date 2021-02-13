@@ -14,7 +14,7 @@ myCollection = mongo.db.g16
 def find():
     flit = {"time_out": None}
     query = myCollection.find(flit)
-    output = [{0:0},{1:0},{2:0},{3,0}]
+    output = [{0:0},{1:0},{2:0},{3:0}]
     for ele in query:
         output[ele["slot_number"]] = 1
     return { "result": output }
