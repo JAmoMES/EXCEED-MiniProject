@@ -10,6 +10,7 @@ myCollection = mongo.db.g16
 i = 0
 cost_t = [0]
 times = [0]
+
 @app.route('/status', methods=['GET']) #158.108.182.18:3000/status?slot={NumOfSlot} -> เชคstatusของช่องslot
 def find():
     slot = request.args.get("slot")
@@ -20,7 +21,7 @@ def find():
         output[ele["status"]] = 1
     return { "result": output }
 
-@app.route('/cost', methods=['GET']) #158.108.182.18:3000/cost?ID={IdOfCar} 
+@app.route('/cost', methods=['GET']) #158.108.182.18:3000/cost?ID={IdOfCar} -> เชคราคาของรถIDนั้น
 def cost():
     flit = request.args
     query = myCollection.find(flit)
