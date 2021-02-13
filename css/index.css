@@ -5,15 +5,9 @@
     color: #D2B55B;
 }
 
-/* .car div.car_busy{
-    background: #f75a45;
-}
 
-.car div.car_free{  
-    background: #27d621;
-} */
 
-.car div.car1{
+.car div.car1_free{
     position: absolute;
     width: 201px;
     height: 301px;
@@ -22,7 +16,7 @@
     background:#13e713;
 }
 
-.car div.car2{
+.car div.car2_free{
     position: absolute;
     width: 201px;
     height: 301px;
@@ -31,7 +25,7 @@
     background:#13e713;
 }
 
-.car div.car3{
+.car div.car3_free{
     position: absolute;
     width: 201px;
     height: 301px;
@@ -40,7 +34,7 @@
     background:#13e713;
 }
 
-.car div.car4{
+.car div.car4_free{
     position: absolute;
     width: 201px;
     height: 301px;
@@ -49,9 +43,47 @@
     background:#13e713;
 }
 
+.car div.car1_busy{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 590px;
+    top: 700px;
+    background:#fa0b0b;
+}
+
+.car div.car2_busy{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 820px;
+    top: 700px;
+    background:#fa0b0b;
+}
+
+.car div.car3_busy{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 1050px;
+    top: 700px;
+    background:#fa0b0b;
+}
+
+.car div.car4_busy{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 1280px;
+    top: 700px;
+    background:#fa0b0b;
+}
+
 .car-img{
-    width: 1515px;
+    width: 1525px;
     height: 680px;
+    margin-left: -10px;
+    margin-top: -10px ;
 }
 
 .btn{
