@@ -1,6 +1,11 @@
-function changeStatus(id,num){
 
-    if (id === 0){
+function changeStatus(){
+    fetch("https://exceed16.cpsk-club.xyz/status?slot=1")
+    .then(data => data.json())
+    .then(data => console.log(data));
+    let slot = 1
+    let num = data.result['status']
+    if (slot === 0){
         if (num === 1){
             document.getElementById("ava1").innerHTML = "Time";
             document.getElementById("time1").innerHTML = "X";
@@ -15,7 +20,7 @@ function changeStatus(id,num){
         }
     }
 
-    else if (id == 1){
+    else if (slot == 1){
         if (num == 1){
             document.getElementById("ava2").innerHTML = "Time";
             document.getElementById("time2").innerHTML = "X";
@@ -30,7 +35,7 @@ function changeStatus(id,num){
         }
     }
 
-    else if (id == 2){
+    else if (slot == 2){
         if (num == 1){
             document.getElementById("ava3").innerHTML = "Time";
             document.getElementById("time3").innerHTML = "X";
@@ -45,7 +50,7 @@ function changeStatus(id,num){
         }
     }
 
-    else if (id == 3){
+    else if (slot == 3){
         if (num == 1){
             document.getElementById("ava4").innerHTML = "Time";
             document.getElementById("time4").innerHTML = "X";
@@ -61,3 +66,4 @@ function changeStatus(id,num){
     }
 }
 
+changeStatus();
