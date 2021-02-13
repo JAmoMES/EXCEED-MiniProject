@@ -1,0 +1,130 @@
+.head{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #D2B55B;
+}
+
+/* .car div.car_busy{
+    background: #f75a45;
+}
+
+.car div.car_free{  
+    background: #27d621;
+} */
+
+.car div.car1{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 590px;
+    top: 700px;
+    background:#13e713;
+}
+
+.car div.car2{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 820px;
+    top: 700px;
+    background:#13e713;
+}
+
+.car div.car3{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 1050px;
+    top: 700px;
+    background:#13e713;
+}
+
+.car div.car4{
+    position: absolute;
+    width: 201px;
+    height: 301px;
+    left: 1280px;
+    top: 700px;
+    background:#13e713;
+}
+
+.car-img{
+    width: 1515px;
+    height: 680px;
+}
+
+.btn{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    
+    position: absolute;
+    width: 388px;
+    height: 58px;
+    left: 68px;
+    top: 940px;
+}
+
+.avail{
+    position: absolute;
+    width: 83px;
+    height: 23px;
+    left: 40px;
+    top: 700px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    
+}
+
+.avail h3{
+    margin-left: 50px;
+}
+
+.date{
+    position: absolute;
+    width: 83px;
+    height: 23px;
+    left: 240px;
+    top: 700px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+}
+
+.date h3{
+    margin-left: 18px;
+}
+
+.time{
+    position: absolute;
+    width: 83px;
+    height: 23px;
+    left: 400px;
+    top: 700px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+}
+
+.time h3{
+    margin-left: 20px;
+}
+
+.empty{
+    margin-bottom: 350px;
+}
