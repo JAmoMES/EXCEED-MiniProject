@@ -9,8 +9,8 @@ mongo = PyMongo(app)
 myCollection = mongo.db.g16
 i = 0
 cost_t = [0]
-
-@app.route('/status', methods=['GET']) #158.108.182.18:3000/status?slot={NumOfSlot}
+times = [0]
+@app.route('/status', methods=['GET']) #158.108.182.18:3000/status?slot={NumOfSlot} -> เชคstatusของช่องslot
 def find():
     slot = request.args.get("slot")
     flit = {"slot_number": slot ,"time_out": None}
@@ -20,7 +20,7 @@ def find():
         output[ele["status"]] = 1
     return { "result": output }
 
-@app.route('/cost', methods=['GET']) #158.108.182.18:3000/cost?ID={IdOfCar}
+@app.route('/cost', methods=['GET']) #158.108.182.18:3000/cost?ID={IdOfCar} 
 def cost():
     flit = request.args
     query = myCollection.find(flit)
@@ -28,20 +28,22 @@ def cost():
     output = [{cost: money}]
     return { "result": output}
 
-@app.route('/time_cost', methods=['GET']) #158.108.182.18:3000/time_cost
+@app.route('/time_cost', methods=['GET']) #158.108.182.18:3000/time_cost -> คืนค่าอาเรเป็น time interval แกนx,แกนy
 def array_cost():
     flit = {"time_out": None}
     query = myCollection.find(flit)
     global cost_t
     summ = cost_t[-1]
+    global times
     t = int(math.ceil(time.time()))
     for ele in query:
         if (t-ele["time_in"])%60 == 0:
             summ += 20
     cost_t.append(summ)
-    return { "result": cost_t}
+    times.append(time.time())
+    return { "result": [times,cost_t]}
 
-@app.route('/updatecar', methods=['POST']) #158.108.182.18:3000/updatecar
+@app.route('/updatecar', methods=['POST']) #158.108.182.18:3000/updatecar -> hardware ส่งสถานะ
 def insert_one():
     data = request.json
     if data["Status"] == 1:
