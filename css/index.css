@@ -6,8 +6,8 @@
 }
 
 
-/* -------------------------------carfree------------------------------------------------- */
-.car div.car1_free{
+/* -------------------------------car------------------------------------------------- */
+.car div.car1{
     position: absolute;
     width: 201px;
     height: 301px;
@@ -16,14 +16,21 @@
     background:#13e713;
 }
 
-.car div.car1_free p{
+.car div.car1 p{
     font-size: 40px;
     text-align: center;
     margin-top: 120px;
     
 }
 
-.car div.car2_free{
+.car div.car1 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.car div.car2{
     position: absolute;
     width: 201px;
     height: 301px;
@@ -32,14 +39,21 @@
     background:#13e713;
 }
 
-.car div.car2_free p{
+.car div.car2 p{
     font-size: 40px;
     text-align: center;
     margin-top: 120px;
     
 }
 
-.car div.car3_free{
+.car div.car2 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.car div.car3{
     position: absolute;
     width: 201px;
     height: 301px;
@@ -48,14 +62,21 @@
     background:#13e713;
 }
 
-.car div.car3_free p{
+.car div.car3 p{
     font-size: 40px;
     text-align: center;
     margin-top: 120px;
     
 }
 
-.car div.car4_free{
+.car div.car3 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.car div.car4{
     position: absolute;
     width: 201px;
     height: 301px;
@@ -64,103 +85,19 @@
     background:#13e713;
 }
 
-.car div.car4_free p{
+.car div.car4 p{
     font-size: 40px;
     text-align: center;
     margin-top: 120px;
     
 }
 
-/* -------------------------------carbusy------------------------------------------------- */
-
-.car div.car1_busy{
-    position: absolute;
-    width: 201px;
-    height: 301px;
-    left: 590px;
-    top: 700px;
-    background:#fa0b0b;
-}
-
-.car div.car1_busy p{
+.car div.car4 h2{
     font-size: 40px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 20px;
     
 }
-
-.car div.car1_busy h2{
-    text-align: center;
-    margin-top: -30px;
-    
-}
-
-.car div.car2_busy{
-    position: absolute;
-    width: 201px;
-    height: 301px;
-    left: 820px;
-    top: 700px;
-    background:#fa0b0b;
-}
-
-.car div.car2_busy p{
-    font-size: 40px;
-    text-align: center;
-    margin-top: 100px;
-    
-}
-
-.car div.car2_busy h2{
-    text-align: center;
-    margin-top: -30px;
-    
-}
-
-.car div.car3_busy{
-    position: absolute;
-    width: 201px;
-    height: 301px;
-    left: 1050px;
-    top: 700px;
-    background:#fa0b0b;
-}
-
-.car div.car3_busy p{
-    font-size: 40px;
-    text-align: center;
-    margin-top: 100px;
-    
-}
-
-.car div.car3_busy h2{
-    text-align: center;
-    margin-top: -30px;
-    
-}
-
-.car div.car4_busy{
-    position: absolute;
-    width: 201px;
-    height: 301px;
-    left: 1280px;
-    top: 700px;
-    background:#fa0b0b;
-}
-
-.car div.car4_busy p{
-    font-size: 40px;
-    text-align: center;
-    margin-top: 100px;
-    
-}
-
-.car div.car4_busy h2{
-    text-align: center;
-    margin-top: -30px;
-    
-}
-/* --------------------------------------------------------------------------------------------------------- */
 
 .car-img{
     width: 1525px;
@@ -168,6 +105,7 @@
     margin-left: -10px;
     margin-top: -10px ;
 }
+/* -------------------------------------------------------------------------------------------------------------- */
 
 .btn{
     font-family: Roboto;
@@ -198,63 +136,6 @@ a :hover{
     top: 810px;
     background-color: #2dee9e;
 }
-
-/*.avail{
-    position: absolute;
-    width: 83px;
-    height: 23px;
-    left: 40px;
-    top: 700px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    
-}
-
-.avail h3{
-    margin-left: 50px;
-}
-
-.date{
-    position: absolute;
-    width: 83px;
-    height: 23px;
-    left: 240px;
-    top: 700px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-
-}
-
-.date h3{
-    margin-left: 18px;
-}
-
-.time{
-    position: absolute;
-    width: 83px;
-    height: 23px;
-    left: 400px;
-    top: 700px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-
-}
-
-.time h3{
-    margin-left: 20px;
-} */
 
 .empty{
     margin-bottom: 350px;
